@@ -1,0 +1,377 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F3EDE3;
+    color: #493729;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+header {
+    padding: 20px 8%;
+    background-color: #F3EDE3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #493729;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #755C48;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #493729;
+    font-weight: 600;
+}
+
+/* HOME PAGE */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px 12%;
+}
+
+.profile-container {
+    width: 300px;
+    height: 390px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #D8C7B3;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    max-width: 480px;
+}
+
+.eyebrow {
+    color: #9B7C5E;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h1,
+.page-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 15px;
+    color: #8B7058;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.intro {
+    font-size: 14px;
+    color: #755C48;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #594332;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8B7058;
+}
+
+/* BACKGROUND AND PROJECT SECTIONS */
+.background-section,
+.project-section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.background-section h2,
+.project-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card,
+.project-card {
+    background-color: #E6D9C9;
+    padding: 30px 22px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.card-icon {
+    color: #9B7C5E;
+    font-size: 25px;
+}
+
+.info-card h3,
+.project-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 12px 0;
+}
+
+.info-card p,
+.project-card p {
+    font-size: 13px;
+    color: #755C48;
+}
+
+.project-card {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* HOBBIES AND CONTACT PAGES */
+.page-container {
+    min-height: 75vh;
+    padding: 65px 10%;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-heading p:not(.eyebrow) {
+    color: #755C48;
+    font-size: 14px;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hobby-card {
+    background-color: #E6D9C9;
+    padding: 35px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.hobby-card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    font-size: 13px;
+    color: #755C48;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background-color: #E6D9C9;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    background-color: #D8C7B3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.contact-card h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-card p {
+    color: #755C48;
+    font-size: 13px;
+}
+
+.contact-card a {
+    color: #8B6545;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* RESUME SECTION */
+.resume-section {
+    text-align: center;
+    padding: 55px 20px;
+    margin: 40px auto;
+    background-color: #E6D9C9;
+    border-radius: 12px;
+    max-width: 850px;
+}
+
+.resume-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.resume-section p {
+    color: #755C48;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.resume-buttons .btn {
+    min-width: 150px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #E6D9C9;
+    color: #755C48;
+    font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 8%;
+        gap: 30px;
+    }
+
+    .profile-container {
+        width: 230px;
+        height: 290px;
+    }
+
+    .hero h1,
+    .page-heading h1 {
+        font-size: 38px;
+    }
+
+    .info-grid,
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .background-section,
+    .project-section,
+    .page-container {
+        padding: 45px 7%;
+    }
+
+    .resume-section {
+        padding: 40px 15px;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-buttons .btn {
+        width: 180px;
+    }
+}
